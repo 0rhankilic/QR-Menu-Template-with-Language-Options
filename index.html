@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dönerzade Menü</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Dönerzade</h1>
+    </div>
+
+    <div class="content">
+        <div class="ceviri">
+            <button id="changeTextTR"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1f9-1f1f7.svg" alt=""></button>
+            <button id="changeTextBG"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1e7-1f1ec.svg" alt=""></button>
+            <button id="changeTextGR"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/svg/1f1ec-1f1f7.svg" alt=""></button>
+        </div>
+        
+        <div class="menuler">
+            <div class="title">
+                <h1 id="menulertitle">
+                    Menüler
+                </h1>
+            </div>
+            <div class="card">
+                <img src="https://images.deliveryhero.io/image/fd-tr/Products/42033551.jpg?width=%s" alt="">
+                <div class="texts">
+                    <h1 id="durummenu1">Dürüm Menü 1</h1>
+                    <p id="durummenu1title">Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1 id="durummenu1price">Fiyat 120 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.deliveryhero.io/image/fd-tr/Products/42033551.jpg?width=%s" alt="">
+                <div class="texts">
+                    <h1 id="durummenu2">Dürüm Menü 2</h1>
+                    <p id="durummenu2title">Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1 id="durummenu2price">Fiyat 120 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.deliveryhero.io/image/fd-tr/Products/42033551.jpg?width=%s" alt="">
+                <div class="texts">
+                    <h1 id="durummenu3">Dürüm Menü 3</h1>
+                    <p id="durummenu3title">Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1 id="durummenu3price">Fiyat 120 TL</h1>
+                </div>
+            </div>
+        </div>
+        <div class="donerler">
+            <div class="title">
+                <h1>
+                    Dönerler
+                </h1>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div class="texts">
+                    <h1>Tavuk Dürüm</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 80 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiciuU2m50ppCZMD1jYh6GmlwsTSG5Q9GTlw&s" alt="">
+                <div class="texts">
+                    <h1>Tavuk Tombik Döner</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 90 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrivdLPz-M9ocWgLigQnf8jgycm3Nfn42rQ&s                " alt="">
+                <div class="texts">
+                    <h1>Ekmek Arası Tavuk Döner</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 70 TL</h1>
+                </div>
+            </div>
+        </div>
+        
+            <div class="atistirmaliklar">
+            <div class="title">
+                <h1>
+                    Atıştırmalıklar
+                </h1>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVcP-ueHNunRvGNsrGENGTsnBNLjyaF9libpodwnvvh4PECZtA9kubJ9uXWcsI_T7y3M&usqp=CAU" alt="">
+                <div class="texts">
+                    <h1>Soğan Halkası</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 80 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.diyetkolik.com/site_media/media/nutrition_images/patates-kizartmasi-actifry.webp" alt="">
+                <div class="texts">
+                    <h1>Patates Kızartması</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 90 TL</h1>
+                </div>
+            </div>
+        </div>
+        <div class="icecekler">
+            <div class="title">
+                <h1>
+                    İçecekler
+                </h1>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PEBAPDg8PEA0OEBAODg4QEA8PEA8OFhUXFhURFRUYHiggGCYlJxUVLTEtJSkrLi8wFx8zRDMsNygtLisBCgoKDg0OGhAQGyslICYrLS0tLS0tLSstNysrLy0rLSsuLSstLy0rKy0tLS0tLS0tLSstLSstLSstLS8vLTMrLf/AABEIAOAA4AMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcBAgMFBAj/xABAEAACAgEBBQQIAwQJBQEAAAABAgADEQQFBxIhMQYTQVEUIjVhcXSBsjKRsUJScqEVIzNiY5PBwuEkQ1OC0Rb/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAwQBAgUG/8QANxEBAAEDAgMFBQgCAQUAAAAAAAECAxEEMRIhQTNRYXGBBRMiMqEGFJGxwdHh8EJSIxYkgsLx/9oADAMBAAIRAxEAPwC8YCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQLtFvEq0992nRSWpPCeFS7M3j1IVfqc/CaV3Kad1nT6S7fnFEI5ZvL1OcipmH96wVfyQH9ZXq1cRtDs2fs7cq+euI8omf2cLd5Wr/Z02mz/fN1n+4SKdZV0heo+zFr/K5PpER+svlbeNrz/2ND/kWH9bJj75X3Qm/wCmNN/vV9P2YXeLtAdKdF/kWD9Hj75X3Qf9Mab/AHq+n7Prp3mawfi0+mP8Bvr/ANxmY1lXWENf2Ytf43J9Yif2fXXvOv8AGhl/htFmfo6j9ZJTq4neFK99nLlPyXInziY/dI+z+8OnUW1UOpWy5ggDKVIY9OYJU8/ePrLNFymvZxtTor2nn449YTmbqpAQEBAQEBAQEBAQEBAQEBAQEDS2xUVnYhVUFmY9AoGSTA/O+2NoelarUao8hdYzIDyxWOSj8gJQv1Zl6z2XZ4aXxF18x+cqy9Hbci6+c1TxEtSwhnmxxr5wN1dfOGJiXVWHmJmENcS9DY+v9G1FGpHMU2qzAc8p0YfkTLVmrEvP+1LPHRL9C02q6q6EFHUMrDoVIyDOg8fMYbwEBAQEBAQEBAQEBAQEBAQEBAhe9zV2VbNcVsV722ulyOprOSV+vD+WZpXPJZ0lMTcjKibCZQl7C1tBXIqnRsOwka9DBhiWky0brMN4ZMzCK61RjnrJqXKvdV5bpdVZZs4B2Ld1dZUmeorAVgv04jOhbnNLxutpiLs4TSSKhAQEBAQEBAQEBAQEBAQEBAQIJvl9mj5mr9HmlzZa0faKPs/4lCXr7W0CSKp0LLsJHK9AYJaGZRt1iW8O+l0l1zCumuy2w8wlas7Y88CZpiZnEK+puUW6eKuYiPHkzqdl6qmw120XI4XjKmtvwfvcvD3yeKao5TDkVX7VynipqiY81x7nPZ7/ADVn2pL1r5XlNd20p1JFMgICAgICAgICAgICAgICAgIEQ3oOV0IdQDYmoq7oHmO9YMiE/AsD9JrVsmsRmrE7dfLeVJ9pDnVX+txkPws+AOOxVCu2B0ywY/WUbnzS9Zoewo5Y5fSecfR5ySCp17LusjldpGmWZczMopSvsT2Nv2k3ESatIhxZdjmx8UrHiff0H8jLaszcnwc32j7Vt6OnEc652j9Z8Pz+qZ6/a1GmY7L2OK6BUrWa/XkcY09afjbP7bDpz6EhRz/DY44pngt+suFGnuXqfveszOeVFPfM7eUfpz84zd2xvqqoejjFJ1F6qlzG23UUItWXtdsniLO/TAHTmBEXpiIwVezqKq66a8ZxG3KImc7R3RERvvusjd4tfo1r1f2V2pe9B0wHSsnl4c8y1TjHJwb01cWKt45fglM2REBAQEBAQEBAQEBAQEBAQEBAhu9SnvNFWnEVDaqosw6qih2Yj3gKZrXGYT6erhqz4Ku2XsCjVauxsvXs2mqrVXO7esEepbe7LefNsnyU+OJUiiKqp7nfr1VdmxTG9czMRjwmYy9PtBsavUJoRpNHXp79Za66atG9azSBQRbcMYU8wfHAJ5nExdoiccMYmfyS+z9VVaquTdrmqmmOc91XdH5eaS6TZmj2fbp9m6ainV7R1GG1V99feJTR1c8PhkA4XI8M5yM54aaJiiIzM7oqr97VW69Vdqmi3T8sUziZnp/M/h4ebvKbZdNlGgqoopAZLNXdTRUbkq8K1OM5I58z+75maajgiYoiMd617GjV3KK9RXVNW8UxMzjPf5dPxDpdBtm2nS7N0qabSUYs1uq7iqu7h/ClasMkk8+vXr+yc7YpuzFNEYjrKL3mo9n0VXdTXNVU8qaczMeM48P46vb7f9o69madNn6ECu56+EcHL0ejpnPXibng9ep64zvfuRbp4KVb2RoKtbdnUX+cRPXrP7R/CCbH2XqL9numlrLNqdYKtTZ0SrT01rYveN+wpZySf8MfCVrdMzRinrP5O3rtRbt6qKrs8qaMxHWZqnE475xGPV4m2r6jatVDcWn0qCip+nekEtZdjw4mZj8OHym8zGcRtCrbpqimaq/mqnM+HdHpH1yuTdIpGzlz43WH4A4x/LH5y9b+WHltZP8AzVJpN1UgICAgICAgICAgICAgICAgIER3oWcOg4uHjIvqUJnHFx5Thz4Z4jNatktiM14/vLmgHbHV10bOpo068A1rBm55Z6KwoBJ94FP0GJBemIoxHV2PZtuq5qJrr58P5z/Z9Xr9jnfR6Gza2uZrLRQtWlVzzXTjArQcuXGxHPywfEzFHw0e8q9GdVEX9RTpLMYjOavPrPpH1fZ2QzotHqtua71tTqwXQHkTWT6iL5cZ4fcFVfKa2vgpm7VvKfXf9zft6Cx8tPL16z6R9coBt7Z+oLVW6hy2v17m30YKeNEc4rLHPItnkuOQA6dJUqpq3neej0Wmv24pqotxi3RGOLpmN8eXWe9bWzNJRsPZrNZgtUne3sMZt1BwAgPxwo931nQpiLNvm8Zfu3PaWsxT1nEeEf3nKttldnNbtdrtfqLUo07Mz26q3IXl1CLnmFwBzIAxjPKU6bdV3NU8o73qbuusaCmnT26Zqq2imP18Z8svI7RbNbRWdyl4uovrS5LaiVS+okhSVB8CG5c+k0qp4JxlPZ1EamjjmnFUTMTE7xPmxrezGsoqW6wVqzlB6Px/9QgckIzpjkCRjrn+eJ/d1RGZcr79ZuXJopz159OW+JXRu+qFentrH4atQal+CVVr+oMu0xjk8rdq4p4p68/xmUomyIgICAgICAgICAgICAgICAgIEO3rNw7OZ/8Ax21WL73XJQfnwzWvZPp4zciO/wDs/RBu0+z9OadDq77F9Do0yKKASLNQ+FKVp7jgZPgAfpBdpjEVTs6mhu3IquWqI+KZ36R3zPl08Ut26NBdptIutuCUvdp3WutlUX8uEL7k9fJPgB16Te7wzTHFKtoZ1FF2ubNOZiJ5z0/nlyb7wdr7PoSnvSt19BNmn0IKmo2YwltyjoF54GRnJHPwj1FdEYzznuW/Y+l1N2qrg+GmeU1dcdYjxnr3fnDt2uns121G1WoY2NSral2bB4rj6qD3YySMdOASvp4mu5xT5u37brp0uiizbjETy9N5/nzSLee76rUaDZdZwdRYLbcdQmeFW+AHeH/1En1HxVU0R1cf2LEWbd3V1f4xiPPf9ofBvN2zQKaNlaFlYIwW6urLcITArpOOpz1HXKiR6muMRRSu+w9Lcm5Vq78eUz47z+H0l9Wx9hUi/wBK1PD6NsbTV6UHqjaqtTZdZ7wjOw+Pwm9u3GcztTGPVV1msrm17q3812qav/GeVMesRHp5vM0VHp2qbXoQ+n1NmlZlLDi05oQu9bD3OlXTqLM+c3pjjq4uk4+itfq+72vcVcqqYq9eKcRMekz6xhNt2+oW3S23LyS3V3uvvXIAP1xn6yemcxly79E0VcM9IhK5shICAgICAgICAgICAgICAgICBBt8SsdnBVBJbU0qFAJLHDYGPHwmlzZa0mIuZlAdl9g79QF9J1S18I5UKe/srU8yMcWE+mZXixM7y61ftWi32dGfHaP3l69m6lWX+o1bBwOS21gqfdlTlfyMVaXulvY+0E0z8dHLwn90L21sLVaCzutTXwE5KMPWrsUeKt4+HvGZSuUTROJep0estamjitTnv748033K6hBfqqyfXsqrdR5hGIb7xLOjn4phxPtNRM27dXSJn6//ABvvP2dtBddXq9IlzBqO5FlKM7Vt66svIErkPyPvPlNtRTXx8VKv7Fv6edPNm7MfNnE8s7Y8+cPD0Gzv6JrGt1iga5hnQaNsFkbp6TavgF8AfHy8IYp91HFVv0j9XTrv/f6/cWZ+D/Or/wBY8+s9ybdotk6obEo0mlRrb7u4F+G9Zi57y1yT5t1z4GWqqKvdRTDz1jUWp9oVXrs4iM49OUR+GyJ9n+CttWlB70bO0NlSsgyLtVYS9ti+J51hR5hBMW8RnHSPq31uauCqvlx1RPlTHKI/Ccz4ysLdxpjTo+6PWqwIf4hVXxfzzLFMYjDj36+Ouau+Z/NKpshICAgICAgICAgICAgICAgICBCN8FzJs7KnDG+teIciAVfOD4f8maXJ5LOkpibkZUbXa1TLZUxSxDxK6+qynzBEobTmHraYiujhq5w97anbTaOpK4uehUVRwUO1QZwPWdiOZyc8ug6e85uXq6urOi9mae1E5piqfGM+n93Yq7U6xqzTqbDq9O34qtQTYQf3ksPrIRzwQfoekim7VjE848XQj2dZirjtxwVd9PL8Y2mPR52k1tuntW7Tu1dtbFq3BBZfDnyweRweWDkzSmZicwt3rVN23NFyMxO6U370dqsnCPR0bGO9Wo8fxwzFf5Sx95uYcOPs/pIqzPFPhnl9Iz9UT1Wqtudrbnay1zlnclmP1leqZnnLuWbdFumKKIxEdISPWdv9o2aVdJxIiqgqa5AwudAMYLZwOXUgZk3v65p4XHq9jaai9N7nPPOOmXjdntu3aI3dyFJur4Mtn1GGeFxjrjJ5Te3XNOytrtLRfxxdJ/sLl3Wa1r9CzsMEXsnXOeGusZ+vM/WXaJzDy2qtxRcmITGbq5AQEBAQEBAQEBAQEBAQEBAQIJvl9mj5mr7XmlzZa0faqV0vdd7V32RR3id7jOe7yOLpz6Z6c5R5Z5vVfF7ueDfHLzSBhscU6kAVnUlR3BRtV3a2CussK2Y5xxd5jiBzjGRyMzV7vE9/q1sTrPeUTz4evy5xmd/HGM4xjfwfdprtlrqX1DW1t3m063rUJcDTpVvdnc8sFSvd48fDHKaZo4s56/TKzNOrqsxbimYxbmJ5xzqmmIiPOJz4eLjw7HfSVpxCrWGvTrZYVtZQzXf1j8uhVRz8wwxzBmse7mnHXklqnW035qxmjNWI5f68o8pnbunc2hVsa17/AEa2uhLaE7jv11AFN6XKGzwhz6yDPjzY9JtMW5zjl/f2Q2qtbbin3sTVMTOcY5xNPLfG0/2Xk7J1OnSnVLbTTZYagdOz99xC02IpC8LAclaw8x1UfAxRMRE5jydG7buVV25oqmIzzxjbEz1jvxHL+Xqa3+iKyndCu8LpLa7eP0pA2trTKXLwsDhyceWAeQ6yX/jjbny8d/5c6Z1lUTx5p+KJj5Z+GZ5xt0hE6+sUsXV47nPZ7/NW/akv2vleS13ap1JFMgICAgICAgICAgICAgICAgIEE3y+zR8zV9rzS5staPtVHWyhL1tvZqkjqX7LukjlfpZaGZczMopbrMJKRpmEF5yr6yeHKury3Oez3+at+1JetfK8lru1TqSKZAQEBAQEBAQEBAQEBAQEBAQIJvl9mj5mr7XmlzZa0faqOtlCXrbezVJHUv2XdJHK/Sy0My5mZRS3WYb0sNMwhvOdfWTw5V1eW5z2e/zVv2pL1r5Xktd2qdSRTICAgICAgICAgICAgICAgICBBN8vs0fM1fa80ubLWj7VR1soS9bb2apI6l+y7pI5XqWWhtLmZlDLdZhJDDTaEF5zr6yaHKury3Oez3+at+1JetfK8nru1TqSKZAQEBAQEBAQEBAQEBAQEBAQIJvl9mj5mr7XmlzZa0faqOtlCXrbezVJHK/Zd0kcr1LLQzLmZlFLdZhJDDTaEF5zr6yaHKury3Oez3+at+1JetfK8nru1TqSKZAQEBAQEBAQEBAQEBAQEBAQIJvl9mj5mr7XmlzZa0faqOtlCXrbezVJHUvWXdJHK/Sy0My5mZRS2WYSQw02hBeaV9ZNDlXV5bnPZ7/NW/akvWvleT13ap1JFMgICAgICAgICAgICAgICAgIEE3y+zR8zV9rzS5staPtVHWyhL1tvZokjlesvoSRyv0smGZcjMop3brMN4YabQgvNKusmhy7i8tzns9/mrftSXrXyvJ67tU6kimQEBAQEBAQEBAQEBAQEBAQECC75fZo+Zq+15pc+Va0faqNulCXrbezRJHUvWXdJHK/SyYZlzMyiluIbww0zCC80q6yaHKuLy3Oez3+as+1JetfK8pru1TqSKZAQEBAQEBAQEBAQEBAQEBAQILvl9mj5mr7Xkdz5VrR9qo26UZett7NEkcr1l3SRyvUMtDaXMzZDLdZhJDV5mFe8+3Yuiax+NqmegZDtxcABwTyOefTw85YojLi6q7FPKJxK6d1NXBo7lwABq7sAHIC8KYGZdtxiHl9XVxV58E0m6sQEBAQEBAQEBAQEBAQEBAQECC75fZo+Zq+15Hc+Va0faqNulGXrbezRJHUu2XdJpK/QyZhtLmZshlssw3hhpmEF5I+yBNi3K3EV01YelVFeRa9gHeevlSVycZGOZl2xz5T0eW9rz7uOKneqcT5RH9ytrdsoGn1AA4R6XYeHyJrqJH5kyzT1cK7MzwzPcls2REBAQEBAQEBAQEBAQEBAQEBAgu+X2aPmavteaXNlrR9qo26UJett7NEmkrtl3SRyv0MtMMy5mbIpbLMN4YaZhBeSDsRZXxaqtigaykd2LG4UZlbOCc/D+cuaeYiZy8x7Zt1VUUzTGcStvdmyHTX93jgGrsVMdOFUrUY93KWqZy4N6macRPcl82QkBAQEBAQEBAQEBAQEBAQEBAgu+X2aPmavteaXNlrR9qo26UJett7NEmkrtl3SRyv0MmYZlzM2RS2Ew3hhptCvdfVsfUpWzli4LJwqyqjDrkhg3gcCT0Thx9VRNeMLq3S2B9Fawzg6u08+Z/DXzMu29nl9ZGLmE2m6qQEBAQEBAQEBAQEBAQEBAQECP8Abns+20dG+nrdUtDLbWzZ4C659VscwCCefh159JrVGYwlsXPd18SjdodlNo1M1baZy6fiVCrnHmADkj3gSnVarjo9PY1+nriI4oifHl/H1eVbodRX/aU2p/FW6/qJDVE9zqWb1udqonymJaowkUulRMMkjzmGZlzJmyKZbBhMNoqh1r0lz/gqtb+Gt2/QTemme5UvX7Ub1RHrEPT2b2T2jc6qunYM/QOVQ48yCcgfESxTarno41/XaejPxxPlz/j6ry7Ddn32dpFosdXtZ2tsK54A7YHCueZAAHPx90uUU8MYeZ1F33tc1QkE2QkBAQEBAQEBAQEBAQEBAQEBAQI/2l2VfqAprID1txVt5eanxwf9B5QPhs2dxJiwOj45+qWGfjDGHi2bByf7cL7mGP8AWMNoqmNpP/z3+PSfjMcMdzb3tf8AtP4yx/QH+PUPgI4Y7j3tf+0/i5nYOTj0jP8ACuf90zhrNUzvL2NFsNEX1e8sf+Er+v8A9hrh6/Z7Zd1HEXI4rG4mPu8FHuH+phl70BAQEBAQEBAQEBAQEBAQEBAQEBAQEDBUHqBA17pP3V/IQHdJ+6v5CBsFHgBAzAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBA//2Q==" alt="">
+                <div class="texts">
+                    <h1>Coca Cola</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 35 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.migrosone.com/sanalmarket/product/8040655/8040655_yan-13e98a-1650x1650.jpg" alt="">
+                <div class="texts">
+                    <h1>Maden Suyu</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 35 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.ticimax.cloud/48857/uploads/urunresimleri/buyuk/1003838-cca939.jpg" alt="">
+                <div class="texts">
+                    <h1>Su</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 35 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSofWs32x2dVHRZ2ioGSoHs1Ivmv5ITIpxGQ&s" alt="">
+                <div class="texts">
+                    <h1>Ayran</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 35 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA8FBqDRFYkcWDT5wk-PU01TS1sPoFTSXUtg&s" alt="">
+                <div class="texts">
+                    <h1>İce Tea</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 35 TL</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJ6Y23MWJFDYzCFjmnjmFbimlgFPxWo1VEQ&s" alt="">
+                <div class="texts">
+                    <h1>Fanta</h1>
+                    <p>Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.</p>
+                    <h1>Fiyat 35 TL</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //BULGARCA
+    document.getElementById("changeTextBG").addEventListener("click", function() {
+        document.getElementById("menulertitle").textContent = "Менюта";
+        document.getElementById("durummenu1").textContent = "Бурито Меню 1";
+        document.getElementById("durummenu1title").textContent = "Пилешки донер, пържени картофи, кисели краставички, чеснова майонеза, специален сос.";
+        document.getElementById("durummenu1price").textContent = "Цена 120 тл";
+        //
+        document.getElementById("durummenu2").textContent = "Бурито Меню 2";
+        document.getElementById("durummenu2title").textContent = "Пилешки донер, пържени картофи, кисели краставички, чеснова майонеза, специален сос.";
+        document.getElementById("durummenu2price").textContent = "Цена 120 тл";
+        //
+        document.getElementById("durummenu3").textContent = "Бурито Меню 3";
+        document.getElementById("durummenu3title").textContent = "Пилешки донер, пържени картофи, кисели краставички, чеснова майонеза, специален сос.";
+        document.getElementById("durummenu3price").textContent = "Цена 120 тл";
+    });
+    //TÜRKÇE
+    document.getElementById("changeTextTR").addEventListener("click", function() {
+        document.getElementById("menulertitle").textContent = "Menüler";
+        document.getElementById("durummenu1").textContent = "Dürüm Menü 1";
+        document.getElementById("durummenu1title").textContent = "Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.";
+        document.getElementById("durummenu1price").textContent = "Fiyat 120 TL";
+        //
+        document.getElementById("durummenu2").textContent = "Dürüm Menü 2";
+        document.getElementById("durummenu2title").textContent = "Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.";
+        document.getElementById("durummenu2price").textContent = "Fiyat 120 TL";
+        //
+        document.getElementById("durummenu3").textContent = "Dürüm Menü 3";
+        document.getElementById("durummenu3title").textContent = "Tavuk Döner, patetes kızartması, turşu, Sarımsaklı mayonez, special sos.";
+        document.getElementById("durummenu3price").textContent = "Fiyat 120 TL";
+    });
+    //YUNANCA
+    document.getElementById("changeTextGR").addEventListener("click", function() {
+        document.getElementById("menulertitle").textContent = "Μενού";
+        document.getElementById("durummenu1").textContent = "Μενού Burrito 1";
+        document.getElementById("durummenu1title").textContent = "Κοτόπουλο ντονέρ, πατάτες τηγανιτές, πίκλες, μαγιονέζα σκόρδου, ειδική σάλτσα.";
+        document.getElementById("durummenu1price").textContent = "Τιμή 120 TL";
+        //
+        document.getElementById("durummenu2").textContent = "Μενού Burrito 2";
+        document.getElementById("durummenu2title").textContent = "Κοτόπουλο ντονέρ, πατάτες τηγανιτές, πίκλες, μαγιονέζα σκόρδου, ειδική σάλτσα.";
+        document.getElementById("durummenu2price").textContent = "Τιμή 120 TL";
+        //
+        document.getElementById("durummenu3").textContent = "Μενού Burrito 3";
+        document.getElementById("durummenu3title").textContent = "Κοτόπουλο ντονέρ, πατάτες τηγανιτές, πίκλες, μαγιονέζα σκόρδου, ειδική σάλτσα.";
+        document.getElementById("durummenu3price").textContent = "Τιμή 120 TL";
+    });
+</script>
+<style>
+    
+    .header{
+        margin: auto;
+        background-color: rgba(243, 169, 21, 0.833);
+        border-radius: 25vw;
+        width: 90%;
+        height: 16vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4vw;
+        border: solid rgba(0, 0, 0, 0.327) 3px;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.605);
+    }
+    .header h1{
+        color: black; 
+        text-align: center;
+        font-family: "Open Sans", serif;
+        font-size: 8vw;
+    }  
+    .content img{
+        width: 25vw;
+        height: 25vw;
+        border-radius: 2vw;
+        align-content: center;
+        justify-content: center;
+    }
+    .menuler{
+        justify-content: center;
+        display: grid;
+    }
+    .donerler{
+        justify-content: center;
+        display: grid;
+    }
+    .atistirmaliklar{
+        justify-content: center;
+        display: grid;
+    }
+    .icecekler{
+        justify-content: center;
+        display: grid;
+    }
+    .card{
+        margin: 0;
+        padding: 0;
+        margin-top: 2vw;
+        width: 85vw;
+        height: 25vw;
+        display:flex;
+        background-color: white;
+        border-radius: 2.1vw;
+        padding-right: 3vw;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.605);
+        background-color: rgba(243, 169, 21, 0.856);
+        /* max-width: 35vw; */
+        border: solid rgba(0, 0, 0, 0.327) 3px;
+    }
+    .card h1{
+        margin-left: 2vw;
+        justify-content: center;
+    }
+    .texts{
+        text-align: center;
+        justify-content: center;
+        margin-top: -1  .5vw;
+        font-size: 2.1vw;
+        margin-left: 2vw;
+        font-family: "Open Sans", serif;
+        padding: 0;
+    }
+    .texts p{
+        color: rgb(36, 36, 36);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: -1vw;
+        padding: 0;
+    }
+
+    .title h1{
+        text-align: center;
+        font-size: 6vw;
+        margin-bottom: -1vw;
+        font-family: "Open Sans", serif;
+    }
+    button{
+        background-color: #ffffff00;
+        border: 0;
+    }
+    .ceviri img{
+        width: 7vw;
+        height: 7vw;
+    }
+    .ceviri{
+        align-content: center;
+        justify-content: center;
+        display:flex;
+        margin-top: 2vw;
+        margin-bottom: -2vw;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .ceviri button img{
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(0 6px 10px 0 rgba(0, 0, 0, 0.605));    
+    }
+    body{
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+    }
+</style>
+</html>
