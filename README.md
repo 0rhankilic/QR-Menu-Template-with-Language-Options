@@ -14,11 +14,11 @@ Bu proje; restoran, kafe ve işletmeler için QR kod üzerinden ulaşılabilen, 
 
 Kullanıcı, menü ekranında dilediği dili seçerek içerikleri anında kendi dilinde görebilir.
 
-<img width="466" height="605" alt="image" src="https://github.com/user-attachments/assets/d28f0ad7-fb31-4290-8842-4561ab7cfd15" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/d28f0ad7-fb31-4290-8842-4561ab7cfd15" />
 
-<img width="467" height="610" alt="image" src="https://github.com/user-attachments/assets/cf901db8-7383-4126-897c-96a75fc91efb" />
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/cf901db8-7383-4126-897c-96a75fc91efb" />
 
-<img width="467" height="608" alt="image" src="https://github.com/user-attachments/assets/402c37f2-78e6-4dde-a03d-3af31e71ee3f" />
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/402c37f2-78e6-4dde-a03d-3af31e71ee3f" />
 
 
 🚀 Özellikler
