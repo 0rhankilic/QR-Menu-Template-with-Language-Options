@@ -31,8 +31,6 @@ Mobil uyumlu responsive tasarım
 
 Kategori – ürün – fiyat listesi
 
-Yönetim paneli (opsiyonel)
-
 Hafif ve hızlı frontend
 
 JSON veya veritabanı tabanlı çok dilli altyapı
